@@ -1,0 +1,370 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  font-family: Open Sans;
+  height: 100vh;
+  font-size: 16px;
+}
+
+p {
+  text-align: center;
+}
+
+.laws {
+  /* Estilos para a lista de regras */
+  list-style: circle;
+  /* Define o estilo de marcador para círculos preenchidos (ou outro estilo desejado) */
+  margin-left: 20px;
+  /* Adicione margem à esquerda para separar os marcadores do conteúdo */
+  display: none;
+}
+
+.menu-values {
+  text-align: center;
+}
+
+.values {
+  display: none;
+
+}
+
+.time {
+  display: none;
+}
+
+/* Estilo para ocultar o checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Estilo para mostrar a lista quando o label é clicado */
+input[type="checkbox"]:checked+ul {
+  display: block;
+}
+
+label {
+  cursor: pointer;
+  /* Transforma o cursor em uma mãozinha ao passar o mouse */
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.header {
+  background-color: #997104;
+  text-align: center;
+  padding-top: 10px;
+}
+
+header nav {
+  line-height: 32px;
+  background-color: #997104;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+
+  color: #FFFFFF;
+}
+
+nav ul li a:hover {
+  background-color: #FFFFFF;
+  color: #015499;
+  border-radius: 5px;
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  background-color: #997104;
+  padding: 10px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* Isso faz com que os itens da lista sejam exibidos em linha */
+}
+
+.nav li {
+  margin: 0 50px;
+}
+
+.address,
+.phone,
+.email {
+  display: inline;
+  /* Isso faz com que os elementos dentro da lista apareçam lado a lado */
+}
+
+.logo img {
+  max-width: 200px;
+  /* Ajuste o tamanho da imagem conforme necessário */
+  height: auto;
+  margin-right: 50px;
+
+}
+
+.photogeral img {
+  width: 40%;
+  height: auto;
+
+}
+
+.photoaddress,
+.photogeral {
+  display: inline;
+  margin-left: 70px;
+}
+
+.photoaddress img {
+  width: 43%;
+  height: auto;
+
+}
+
+main aside {
+
+  padding: 20px;
+  width: 40%;
+  height: 100%;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+/* Estilos para a galeria de fotos */
+
+.photo-gallery {
+  list-style: none;
+  /* Remove marcadores de lista */
+  padding: 0;
+  max-width: 100%;
+  /* Define o tamanho máximo da galeria */
+
+}
+
+.photo-gallery ul {
+
+  display: inline-block;
+  /* Exibe as listas uma ao lado da outra */
+}
+
+.photo-gallery li {
+
+  margin: 5px;
+  /* Espaçamento entre as imagens */
+}
+
+.photo-gallery img {
+  width: 30%;
+  height: auto;
+  margin: 5px;
+  border: 1px solid #ccc;
+  /* Adiciona borda ao redor das imagens */
+  border-radius: 10px;
+  /* Borda arredondada */
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.foods,
+.drinks {
+  border-collapse: collapse;
+  width: 45%;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #b5b5b5;
+}
+
+.foods th,
+.drinks th {
+  background-color: #997104;
+  color: white;
+  padding: 8px;
+  text-align: center;
+}
+
+.foods td,
+.drinks td {
+  padding: 8px;
+  text-align: center;
+}
+
+.foods tr:nth-child(even),
+.drinks tr:nth-child(even) {
+  background-color: #e5e5e5;
+}
+
+main .articleContainer article {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 30%;
+  display: inline-block;
+}
+
+main .articleContainer article {
+  margin: 10px 0;
+  border-radius: 20px;
+}
+
+main .articleContainer article figure {
+  margin-bottom: 8px;
+}
+
+main .articleContainer article figure img {
+
+  width: 100%;
+  border-radius: 10px;
+}
+
+.tag {
+  background-color: #000000;
+  border-radius: 5px;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  width: fit-content;
+  margin-bottom: 8px;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: #938f8f;
+  padding-right: 5px;
+}
+
+#about {
+  height: fit-content;
+  padding: 40px 0px;
+  background-color: #997104;
+  color: #FFFFFF;
+}
+
+#about article {
+  width: 60%;
+  margin: auto;
+}
+
+
+#about h2 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#about p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+#reserv {
+  height: fit-content;
+  padding: 40px 0;
+  background-color: #FFFFFF;
+}
+
+#reserv form {
+  width: 60%;
+  margin: auto;
+}
+
+#reserv label {
+  display: block;
+  margin: 20px 0;
+}
+
+#reserv label input {
+  border: 1px solid #015499;
+  border-radius: 5px;
+}
+
+#reserv label input:not([type="checkbox"]) {
+  width: 300px;
+  height: 32px;
+  padding-left: 10px;
+}
+
+#reserv button {
+  background-color: #997104;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #997104;
+
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  height: 300px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
